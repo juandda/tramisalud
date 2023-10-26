@@ -1,38 +1,104 @@
+*{
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  overflow: hidden;
+  padding: 0px;
+}
+
+body{
+  background: linear-gradient(rgba(5,7,12,0.55), rgba(5,7,12,0.55)),
+              url("assets/fondo.jpg") no-repeat center center fixed;
+  background-color: rgba(57, 62, 70, 0.3);
+  background-size: cover;
+
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.login-full{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  justify-content: space-around;
+}
+.promo-container{
+  width: 50%;
+  height: 15%;
+}
+.promo-container h1{
+  color: #F7F7F7;
+  margin-bottom: 30px;
+}
+.promo-container h2{
+  color: #F7F7F7;
+  margin-bottom: 15px;
+}
+.promo-container p{
+  color: #F7F7F7;
+  text-align: justify;
+}
+.login-container{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.formContainer{
+  width: 500px;
+  height: 500px;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 40px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #F7F7F7;
+  border-radius: 7px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.formContainer #inputCreatePost {
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #B2B2B2;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 16px;
 }
+
+.form-container{
+  margin-top: 100px;
+}
+
+.dataGrid-container{
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.css-1e2bxag-MuiDataGrid-root .MuiDataGrid-columnHeader:focus, .css-1e2bxag-MuiDataGrid-root .MuiDataGrid-cell:focus {
+  outline: solid #1976d2 0px !important;
+}
+.css-1txg6f2-MuiDataGrid-root .MuiDataGrid-columnHeader:focus, .css-1txg6f2-MuiDataGrid-root .MuiDataGrid-cell:focus {
+  outline: solid #1976d2 0px !important;
+}
+
+ .home-container{
+  margin: 0 auto;
+ }
+ .table-container{
+  margin: 0 auto;
+  margin-top: 20px;
+ }
+
+ a{
+  margin-top: 10px;
+ }
